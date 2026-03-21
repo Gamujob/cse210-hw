@@ -65,7 +65,7 @@ class Program
 
                 foreach (string line in lines)
                 {
-                    string[] parts = line.Split(",");
+                    string[] parts = line.Split(", ");
 
                     string date = parts[0];
                     string prompt = parts[1];
@@ -108,7 +108,7 @@ class Program
             {
                 Console.WriteLine("Invalid Response, please check the options and try again");
             }
-            Console.WriteLine("");
+            Console.WriteLine();
         }
     }
 }
