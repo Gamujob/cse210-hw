@@ -2,9 +2,9 @@ using System;
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+  private static void Main(string[] args)
     {
         int choice = -1;
         while (choice != 4)

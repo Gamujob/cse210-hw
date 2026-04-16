@@ -3,9 +3,9 @@ using System.IO;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+  private static void Main(string[] args)
     {
 
         Console.WriteLine("Welcome to the Journal Program!");

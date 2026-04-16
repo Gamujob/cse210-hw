@@ -1,8 +1,8 @@
 using System;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+  private static void Main(string[] args)
     {
         List<int> numberList = new List<int>();
         int number = -1;

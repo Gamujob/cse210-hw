@@ -2,9 +2,9 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+  private static void Main(string[] args)
     {
 
         List<Scripture> scriptures = new List<Scripture>();

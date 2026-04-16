@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+  private static void Main(string[] args)
     {
         // CREATE THE VIDEOS
         Video video1 = new Video("Eating Health Food", "Job Gamu", 540);

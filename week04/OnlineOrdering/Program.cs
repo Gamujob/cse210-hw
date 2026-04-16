@@ -1,8 +1,8 @@
 using System;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+  private static void Main(string[] args)
     {
         // FIRST ORDER
         Address address1 = new Address("164 Main Street", "New York", "NY", "USA");
