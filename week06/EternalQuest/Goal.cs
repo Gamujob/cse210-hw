@@ -1,27 +1,31 @@
-using System.Drawing;
-using System.Runtime.InteropServices.Marshalling;
 
 public abstract class Goal
 {
-  private string _shotName;
-  private string _description;
-  private string _points;
+  protected string _shortName;
+  protected string _description;
+  protected string _points;
 
   public Goal(string name, string description, string points)
   {
-    _shotName = name;
+    _shortName = name;
     _description = description;
     _points = points;
   }
 
   public abstract void RecordEvent();
-
   public abstract bool IsComplete();
 
-  public string GetDetailsString()
+  public virtual string GetDetailsString()
   {
-    return _description;
+    return $"{_shortName} ({_description})";
+  }
+  public abstract string GetStringRepresentation();
+
+  public string GetPoints()
+  {
+    return _points;
   }
 
-  public abstract string GetStringRepresentation();
+  protected string ShortName => _shortName;
+  protected string Description => _description;
 }
