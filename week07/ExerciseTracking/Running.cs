@@ -1,0 +1,26 @@
+class Running : Activity
+{
+  private double _distance;
+
+  public Running(DateTime date, int minutes, double distance) : base(date, minutes)
+  {
+    _distance = distance;
+  }
+
+  public override double GetDistance()
+  {
+    return _distance;
+  }
+
+  public override double GetSpeed()
+  {
+    double speed = (_distance / GetMins()) * 60;
+    return speed;
+  }
+
+  public override double GetLapNo()
+  {
+    double pace = GetMins() / _distance;
+    return pace;
+  }
+}
